@@ -8,6 +8,7 @@ class CreateUser extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Create User'),
+        backgroundColor: Colors.red,
       ),
       body: const Center(
         child: Text('Create User'),
