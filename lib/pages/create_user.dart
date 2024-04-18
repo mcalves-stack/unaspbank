@@ -217,7 +217,6 @@ class CreateUser extends StatelessWidget {
                         obscureText: true,
                       ),
                     ),
-                    
                     const SizedBox(height: 25),
                     SizedBox(
                       width: 173,
@@ -231,7 +230,7 @@ class CreateUser extends StatelessWidget {
                         child: const Text("Continuar",
                             style: TextStyle(color: Colors.white)),
                       ),
-                    ),                    
+                    ),
                   ],
                 ),
               ),
