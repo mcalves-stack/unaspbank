@@ -25,7 +25,7 @@ class SucessSignupState extends State<SucessSignup> {
           const Align(
             alignment: Alignment.topLeft,
             child: Padding(
-              padding: EdgeInsets.only(left: 40.0, bottom: 15.0),
+              padding: EdgeInsets.only(left: 25.0, bottom: 15.0),
               child: Icon(
                 Icons.arrow_back,
                 color: Colors.white,
@@ -52,6 +52,55 @@ class SucessSignupState extends State<SucessSignup> {
                       child: Image.asset(
                         'assets/images/process_level.png',
                         fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 40),
+                  Image.asset(
+                    'assets/images/success.png',
+                    fit: BoxFit.cover,
+                    alignment: Alignment.center,
+                  ),
+                  const SizedBox(height: 65),
+                  const Text('Prontinho! Sua foto foi enviada com sucesso',
+                      style: TextStyle(
+                        color: Color(0xFF070054),
+                        fontSize: 16.0,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w500,
+                      ),
+                      textAlign: TextAlign.center),
+                  const SizedBox(height: 11),
+                  const Text(
+                    'Agora você já pode prosseguir para\n a próxima etapa do seu cadastro.',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 14.0,
+                      fontFamily: 'Poppins',
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 24),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFF070054),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 50, vertical: 15),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                    child: const Text(
+                      'Continuar',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontFamily: 'Poppins',
+                        fontStyle: FontStyle.normal,
+                        letterSpacing: 0.2,
                       ),
                     ),
                   ),
