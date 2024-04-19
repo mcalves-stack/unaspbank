@@ -6,14 +6,6 @@ class CreateUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
-      appBar: AppBar(
-        title: const Text('Create User'),
-        backgroundColor: Colors.red,
-      ),
-      body: const Center(
-        child: Text('Create User'),
-=======
       body: Container(
         width: double.infinity,
         decoration: const BoxDecoration(
@@ -225,7 +217,6 @@ class CreateUser extends StatelessWidget {
                         obscureText: true,
                       ),
                     ),
-                    
                     const SizedBox(height: 25),
                     SizedBox(
                       width: 173,
@@ -239,14 +230,13 @@ class CreateUser extends StatelessWidget {
                         child: const Text("Continuar",
                             style: TextStyle(color: Colors.white)),
                       ),
-                    ),                    
+                    ),
                   ],
                 ),
               ),
             ),
           ],
         ),
->>>>>>> 95970d1548e13bacaf79e805a86b7e73ce0d2140
       ),
     );
   }
