@@ -6,12 +6,255 @@ class CreateUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Create User'),
-        backgroundColor: Colors.red,
-      ),
-      body: const Center(
-        child: Text('Create User'),
+      body: Container(
+        width: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color(0xFF070054),
+              Color(0xFF070054),
+            ],
+          ),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            const Padding(padding: EdgeInsets.only(top: 56.0)),
+            const Padding(
+              // ignore: unnecessary_const
+              padding: const EdgeInsets.only(left: 15.0, top: 15),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(
+                        8.0), // Adiciona espaço ao redor do widget Row
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.arrow_back,
+                          color: Colors.white,
+                          size: 24.0,
+                        ),
+                        SizedBox(
+                            width:
+                                8), // Adiciona espaço entre o ícone e o texto
+                        Text(
+                          "Cadastre-se",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.normal,
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            Expanded(
+              child: Container(
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(40),
+                      topRight: Radius.circular(40)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.only(top: 25.0, right: 175),
+                      child: Text(
+                        "Seja Bem-vindo",
+                        style: TextStyle(
+                          color: Color(0xFF070054),
+                          fontSize: 24,
+                          fontStyle: FontStyle.normal,
+                          fontFamily: "Poppins",
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 3, right: 225),
+                      child: Text(
+                        "Crie a sua conta abaixo",
+                        style: TextStyle(
+                          color: Color(0xFF343434),
+                          fontSize: 12,
+                          fontFamily: "Poppins",
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: 327,
+                      height: 44,
+                      child: TextField(
+                        style: const TextStyle(
+                          color: Color(0xFFCACACA),
+                        ),
+                        decoration: InputDecoration(
+                          hintText: 'Usuário',
+                          labelText: 'RA/E-mail',
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 20),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            borderSide: const BorderSide(
+                                color: Color(0xFFCBCBCB), width: 1),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: 327, // Definindo a largura desejada
+                      height: 44, // Definindo a altura desejada
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: 'CPF',
+                          labelText: 'CPF',
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 20),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            borderSide: const BorderSide(
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                        obscureText: true,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: 327, // Definindo a largura desejada
+                      height: 44, // Definindo a altura desejada
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: '+000 | Número de telefone',
+                          labelText: '+000 | Número de telefone',
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 20),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            borderSide: const BorderSide(
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                        obscureText: true,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: 327, // Definindo a largura desejada
+                      height: 44, // Definindo a altura desejada
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: 'E-mail',
+                          labelText: 'E-mail',
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 20),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            borderSide: const BorderSide(
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                        obscureText: true,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: 327, // Definindo a largura desejada
+                      height: 44, // Definindo a altura desejada
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Senha',
+                          labelText: 'Senha',
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 20),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            borderSide: const BorderSide(
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                        obscureText: true,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: 327, // Definindo a largura desejada
+                      height: 44, // Definindo a altura desejada
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Confirmação de senha',
+                          labelText: 'Confirmação de senha',
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 20),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            borderSide: const BorderSide(
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                        obscureText: true,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    SizedBox(
+                      width: 327, // Definindo a largura desejada
+                      height: 44, // Definindo a altura desejada
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Data de Nascimento',
+                          labelText: 'Data de Nascimento',
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 20),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            borderSide: const BorderSide(
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                        obscureText: true,
+                      ),
+                    ),
+                    const SizedBox(height: 25),
+                    SizedBox(
+                      width: 173,
+                      height: 54,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFF070054),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10))),
+                        child: const Text("Continuar",
+                            style: TextStyle(color: Colors.white)),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
