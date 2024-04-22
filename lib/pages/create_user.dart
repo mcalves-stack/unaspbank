@@ -22,19 +22,27 @@ class CreateUser extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
-            const Padding(
+            Padding(
               // ignore: unnecessary_const
-              padding: const EdgeInsets.only(left: 38.0, top: 15),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              padding: const EdgeInsets.fromLTRB(24, 25, 174, 0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Text(
+                  Image.asset(
+                    "assets/images/arrow-down.png",
+                    width: 16,
+                    height: 16,
+                  ),
+                  const SizedBox(
+                    width: 12,
+                  ),
+                  const Text(
                     "Cadastre-se",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
                       fontFamily: "Poppins",
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w600,
                       fontStyle: FontStyle.normal,
                     ),
                   ),
