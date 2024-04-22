@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
-class Financing extends StatefulWidget {
-  const Financing({super.key});
+class MonthlyIncome extends StatefulWidget {
+  const MonthlyIncome({super.key});
 
   @override
-  FinancingState createState() => FinancingState();
+  MonthlyIncomeState createState() => MonthlyIncomeState();
 }
 
-class FinancingState extends State<Financing> {
+class MonthlyIncomeState extends State<MonthlyIncome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,19 +37,6 @@ class FinancingState extends State<Financing> {
                     width: 16,
                     height: 16,
                   ),
-                  const SizedBox(
-                    width: 12,
-                  ),
-                  const Text(
-                    "Financiamento",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Poppins",
-                      fontWeight: FontWeight.w600,
-                      fontStyle: FontStyle.normal,
-                    ),
-                  ),
                 ],
               ),
             ),
@@ -70,25 +58,27 @@ class FinancingState extends State<Financing> {
                     Align(
                       alignment: Alignment.center,
                       child: Padding(
-                        padding: const EdgeInsets.all(11.0),
-                        child: Image.asset(
-                          'assets/images/sucess-img-financing.png',
-                          fit: BoxFit.cover,
+                        padding: const EdgeInsets.all(31.0),
+                        child: SvgPicture.asset(
+                          "assets/images/complete-sucess.svg",
+                          width: 16,
+                          height: 16,
                         ),
                       ),
                     ),
                     const Padding(
                       padding: EdgeInsets.only(
-                        top: 25,
+                        left: 25,
+                        right: 23,
+                        top: 10,
                       ),
                       child: Text(
-                        "De quanto você precisa?",
+                        "Por último mas não menos importante, nos informe sobre sua renda:",
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 26,
                           fontFamily: "Poppins",
-                          fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
@@ -103,7 +93,7 @@ class FinancingState extends State<Financing> {
                               left: 4.5,
                             ), // Ajuste o valor de 'left' conforme necessário
                             child: Text(
-                              "Valor solicitado",
+                              "Renda mensal",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 14,
@@ -119,8 +109,7 @@ class FinancingState extends State<Financing> {
                           ),
                           TextField(
                             decoration: InputDecoration(
-                              hintText: 'Usuário',
-                              labelText: 'Digite o valor...',
+                              labelText: 'Sua renda',
                               contentPadding:
                                   const EdgeInsets.symmetric(horizontal: 20),
                               border: OutlineInputBorder(
@@ -128,24 +117,44 @@ class FinancingState extends State<Financing> {
                                 borderSide: const BorderSide(
                                     color: Color(0xFFCBCBCB), width: 1),
                               ),
+                              suffixIcon: const Icon(Icons.arrow_drop_down),
                             ),
                           ),
-                          const SizedBox(height: 8),
+                          const SizedBox(height: 34),
                           const Padding(
                             padding: EdgeInsets.only(
-                              left: 10,
-                            ),
+                              left: 4.5,
+                            ), // Ajuste o valor de 'left' conforme necessário
                             child: Text(
-                              "Informe um valor entre R\$200.00 e R\$100.000,00",
+                              "Renda familiar",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: 13,
-                                fontWeight: FontWeight.w400,
+                                fontSize: 14,
+                                fontStyle: FontStyle.normal,
                                 letterSpacing: -0.408,
+                                fontWeight: FontWeight.w400,
                                 fontFamily: "Poppins",
                               ),
                             ),
-                          )
+                          ),
+                          const SizedBox(
+                            height: 8,
+                          ),
+                          TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Renda da sua família',
+                              contentPadding:
+                                  const EdgeInsets.symmetric(horizontal: 20),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(15),
+                                borderSide: const BorderSide(
+                                  color: Color(0xFFCBCBCB),
+                                  width: 1,
+                                ),
+                              ),
+                              suffixIcon: const Icon(Icons.arrow_drop_down),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -159,9 +168,10 @@ class FinancingState extends State<Financing> {
                             backgroundColor: const Color(0xFF070054),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10))),
-                        child: const Text("Avançar",
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 22)),
+                        child: const Text(
+                          "Avançar",
+                          style: TextStyle(color: Colors.white, fontSize: 22),
+                        ),
                       ),
                     ),
                   ],

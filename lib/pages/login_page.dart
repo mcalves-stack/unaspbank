@@ -57,7 +57,7 @@ class LoginPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const Padding(
-                      padding: EdgeInsets.only(top: 25.0, right: 125),
+                      padding: EdgeInsets.only(top: 25.0, right: 100),
                       child: Text(
                         "Bem-vindo de volta",
                         style: TextStyle(
@@ -68,8 +68,11 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    const SizedBox(
+                      height: 6,
+                    ),
                     const Padding(
-                      padding: EdgeInsets.only(top: 3, right: 150),
+                      padding: EdgeInsets.only(right: 125),
                       child: Text(
                         "Logue na sua conta pra prosseguir",
                         style: TextStyle(
@@ -109,7 +112,7 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 15),
                     SizedBox(
                       width: 327, // Definindo a largura desejada
                       height: 44, // Definindo a altura desejada
@@ -148,7 +151,7 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 25),
+                    const SizedBox(height: 16),
                     SizedBox(
                       width: 173,
                       height: 54,
@@ -158,13 +161,13 @@ class LoginPage extends StatelessWidget {
                             backgroundColor: const Color(0xFF070054),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10))),
-                        child: const Text("Entrar",
+                        child: const Text("Login",
                             style: TextStyle(color: Colors.white)),
                       ),
                     ),
                     SizedBox(
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 30.0, left: 25.0),
+                        padding: const EdgeInsets.only(top: 25.0, left: 25.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [

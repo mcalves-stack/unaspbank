@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
-class ImageVerify extends StatefulWidget {
-  const ImageVerify({super.key});
+class DocumentVerify extends StatefulWidget {
+  const DocumentVerify({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
-  _ImageVerifyState createState() => _ImageVerifyState();
+  DocumentVerifyState createState() => DocumentVerifyState();
 }
 
-class _ImageVerifyState extends State<ImageVerify> {
+class DocumentVerifyState extends State<DocumentVerify> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,29 +58,31 @@ class _ImageVerifyState extends State<ImageVerify> {
                       alignment: Alignment.center,
                       child: Padding(
                         padding: const EdgeInsets.all(11.0),
-                        child: Image.asset(
-                          'assets/images/img_current.png',
-                          fit: BoxFit.cover,
+                        child: SvgPicture.asset(
+                          "assets/images/document-verify.svg",
+                          width: 16,
+                          height: 16,
                         ),
                       ),
                     ),
                     const Padding(
                       padding: EdgeInsets.all(25),
                       child: Text(
-                        "Insira uma foto sua no campo abaixo",
+                        "Agora, precisamos de uma foto do seu RG",
                         style: TextStyle(
+                          height: 1.4,
                           color: Colors.black,
                           fontSize: 26,
                           fontFamily: "Poppins",
-                          fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w500,
+                          letterSpacing: 0.2,
                         ),
                       ),
                     ),
                     const Padding(
                       padding: EdgeInsets.only(bottom: 10, left: 25, right: 25),
                       child: Text(
-                        "É necessário que seja enviado uma foto do seu rosto visível para prosseguir com o seu cadastro. Não se preocupe, seus dados serão mantidos em segurança e privados.",
+                        "É necessário que seja enviado uma foto do seu documento de identificação visível para prosseguir com o seu cadastro. Não se preocupe, seus dados serão mantidos em segurança e privados.",
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 16,
@@ -151,7 +153,7 @@ class _ImageVerifyState extends State<ImageVerify> {
                         ),
                         SizedBox(width: 10),
                         Text(
-                          '  ',
+                          'Abra a sua camera e tire uma foto',
                           style: TextStyle(
                             color: Color(0xFF070054),
                             fontSize: 16.0,
@@ -176,7 +178,7 @@ class _ImageVerifyState extends State<ImageVerify> {
                         ),
                       ),
                       child: const Text(
-                        'Continuar',
+                        'Continuar    ',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 16,

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
-class SucessSignup extends StatefulWidget {
-  const SucessSignup({super.key});
+class SendDocSucess extends StatefulWidget {
+  const SendDocSucess({super.key});
 
   @override
-  SucessSignupState createState() => SucessSignupState();
+  SendDocSucessState createState() => SendDocSucessState();
 }
 
-class SucessSignupState extends State<SucessSignup> {
+class SendDocSucessState extends State<SendDocSucess> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,30 +57,32 @@ class SucessSignupState extends State<SucessSignup> {
                     alignment: Alignment.center,
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: Image.asset(
-                        'assets/images/process_level.png',
-                        fit: BoxFit.cover,
+                      child: SvgPicture.asset(
+                        "assets/images/document-verify.svg",
+                        width: 16,
+                        height: 16,
                       ),
                     ),
                   ),
-                  const SizedBox(height: 40),
-                  Image.asset(
-                    'assets/images/success.png',
-                    fit: BoxFit.cover,
-                    alignment: Alignment.center,
+                  const SizedBox(height: 73),
+                  SvgPicture.asset(
+                    "assets/images/sucess-doc.svg",
+                    width: 324,
+                    height: 234,
                   ),
                   const SizedBox(height: 65),
-                  const Text('Prontinho! Sua foto foi enviada com sucesso',
+                  const Text('Documento enviado!',
                       style: TextStyle(
                         color: Color(0xFF070054),
                         fontSize: 16.0,
                         fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w600,
+                        height: 1,
                       ),
                       textAlign: TextAlign.center),
                   const SizedBox(height: 11),
                   const Text(
-                    'Agora você já pode prosseguir para\n a próxima etapa do seu cadastro.',
+                    'Pode prosseguir para a última etapa!',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 14.0,
@@ -89,7 +92,7 @@ class SucessSignupState extends State<SucessSignup> {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 46),
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
