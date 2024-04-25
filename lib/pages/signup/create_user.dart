@@ -230,7 +230,9 @@ class CreateUser extends StatelessWidget {
                       width: 173,
                       height: 54,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/imageVerify');
+                        },
                         style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF070054),
                             shape: RoundedRectangleBorder(

@@ -94,7 +94,9 @@ class SendDocSucessState extends State<SendDocSucess> {
                   ),
                   const SizedBox(height: 46),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/monthlyIncome');
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFF070054),
                       padding: const EdgeInsets.symmetric(

@@ -168,7 +168,9 @@ class DocumentVerifyState extends State<DocumentVerify> {
                     ),
                     const SizedBox(height: 50),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/sendDocSuccess');
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF070054),
                         padding: const EdgeInsets.symmetric(
