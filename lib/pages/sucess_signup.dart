@@ -91,7 +91,9 @@ class SucessSignupState extends State<SucessSignup> {
                   ),
                   const SizedBox(height: 24),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/documentVerify');
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFF070054),
                       padding: const EdgeInsets.symmetric(

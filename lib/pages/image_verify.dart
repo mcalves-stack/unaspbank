@@ -166,7 +166,9 @@ class _ImageVerifyState extends State<ImageVerify> {
                     ),
                     const SizedBox(height: 50),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/successSignup');
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF070054),
                         padding: const EdgeInsets.symmetric(
