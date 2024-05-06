@@ -163,7 +163,9 @@ class MonthlyIncomeState extends State<MonthlyIncome> {
                       width: 173,
                       height: 54,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/registerCompleted');
+                        },
                         style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF070054),
                             shape: RoundedRectangleBorder(

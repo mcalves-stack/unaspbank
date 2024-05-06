@@ -74,7 +74,9 @@ class RegisterCompletedState extends State<RegisterCompleted> {
                   ),
                   const SizedBox(height: 44),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/');
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFF070054),
                       padding: const EdgeInsets.symmetric(

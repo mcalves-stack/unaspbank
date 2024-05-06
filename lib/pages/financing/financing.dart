@@ -154,7 +154,9 @@ class FinancingState extends State<Financing> {
                       width: 173,
                       height: 54,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/installmentFinancing');
+                        },
                         style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF070054),
                             shape: RoundedRectangleBorder(

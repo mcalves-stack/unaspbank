@@ -139,7 +139,9 @@ class LoginPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(context, '/forgotPassword');
+                              },
                               child: const Text(
                                 "Esqueceu a senha?",
                                 style: TextStyle(
@@ -173,7 +175,9 @@ class LoginPage extends StatelessWidget {
                           children: [
                             const Text("Não tem uma conta?"),
                             TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(context, '/createUser');
+                              },
                               child: const Text("Cadastre-se",
                                   style: TextStyle(
                                       color: Color(0xFF070054),
