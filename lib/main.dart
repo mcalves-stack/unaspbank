@@ -11,6 +11,7 @@ import 'package:unaspbank/pages/signup/monthly_income.dart';
 import 'package:unaspbank/pages/signup/register_completed.dart';
 import 'package:unaspbank/pages/financing/financing.dart';
 import 'package:unaspbank/pages/financing/installment_financing.dart';
+import 'package:unaspbank/pages/password/forgot_password.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         '/monthlyIncome': (context) => const MonthlyIncome(),
         '/registerCompleted': (context) => const RegisterCompleted(),
         '/installmentFinancing': (context) => const InstallmentFinancing(),
+        '/forgotPassword': (context) => const ForgotPassword(),
       },
     );
   }

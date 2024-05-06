@@ -139,7 +139,9 @@ class LoginPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(context, '/forgotPassword');
+                              },
                               child: const Text(
                                 "Esqueceu a senha?",
                                 style: TextStyle(
