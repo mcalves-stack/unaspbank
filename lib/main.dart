@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unaspbank/pages/password/Passwordnew_reset.dart';
 
 // PAGES
 import 'package:unaspbank/pages/signup/create_user.dart';
@@ -12,6 +13,8 @@ import 'package:unaspbank/pages/signup/register_completed.dart';
 import 'package:unaspbank/pages/financing/financing.dart';
 import 'package:unaspbank/pages/financing/installment_financing.dart';
 import 'package:unaspbank/pages/password/forgot_password.dart';
+import 'package:unaspbank/pages/password/password_code.dart';
+import 'package:unaspbank/pages/password/completedreset_password.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,14 +32,17 @@ class MyApp extends StatelessWidget {
         '/': (context) => const LoginPage(),
         '/createUser': (context) => const CreateUser(),
         '/successSignup': (context) => const SucessSignup(),
-        '/financing': (context) => const Financing(),
         '/imageVerify': (context) => const ImageVerify(),
-        '/documentVerify': (context) => const DocumentVerify(),
         '/sendDocSuccess': (context) => const SendDocSucess(),
+        '/documentVerify': (context) => const DocumentVerify(),
+        '/financing': (context) => const Financing(),
         '/monthlyIncome': (context) => const MonthlyIncome(),
         '/registerCompleted': (context) => const RegisterCompleted(),
         '/installmentFinancing': (context) => const InstallmentFinancing(),
         '/forgotPassword': (context) => const ForgotPassword(),
+        '/passwordCode': (context) => const PasswordCode(),
+        '/passwordNewReset': (context) => const PasswordnewReset(),
+        '/CompletedresetPassword': (context) => const CompletedresetPassword(),
       },
     );
   }
