@@ -160,7 +160,6 @@ class DocumentVerifyState extends State<DocumentVerify> {
                             fontFamily: 'Poppins',
                             fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.w700,
-                            height: 1.4,
                             letterSpacing: 0.2,
                           ),
                         ),

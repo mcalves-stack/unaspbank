@@ -67,7 +67,9 @@ class ForgotPasswordState extends State<ForgotPassword> {
                   width: 173,
                   height: 54,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/passwordCode');
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF070054),
                         shape: RoundedRectangleBorder(

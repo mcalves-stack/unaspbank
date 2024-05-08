@@ -151,7 +151,7 @@ class _ImageVerifyState extends State<ImageVerify> {
                         ),
                         SizedBox(width: 10),
                         Text(
-                          '  ',
+                          'Abra a sua camera e tire uma foto sua',
                           style: TextStyle(
                             color: Color(0xFF070054),
                             fontSize: 16.0,
